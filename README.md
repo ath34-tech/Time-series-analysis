@@ -1,6 +1,6 @@
-# Time Series Analysis (TSA) Exploratory Data Analysis (EDA)
+# Time Series Analysis (TSA) Exploratory Data Analysis (EDA) and ARIMA Forecasting
 
-This project involves performing exploratory data analysis (EDA) on time series data using Pandas, Matplotlib, and Plotly. The data is fetched using the Yahoo Finance library. The aim is to visualize and understand the underlying patterns, trends, and seasonalities in the data.
+This project involves performing exploratory data analysis (EDA) on time series data using Pandas, Matplotlib, and Plotly. The data is fetched using the Yahoo Finance library. The aim is to visualize and understand the underlying patterns, trends, and seasonalities in the data.This demonstrates stock price forecasting using the ARIMA (AutoRegressive Integrated Moving Average) model. It includes fetching stock data, training an ARIMA model, forecasting future prices, and evaluating model performance
 
 ## Requirements
 
@@ -10,6 +10,9 @@ Ensure you have the following packages installed:
 - `matplotlib`
 - `plotly`
 - `yfinance`
+- `statsmodels`
+- `scikit-learn`
+- `pmdarima`
 
 You can install the required packages using pip:
 
@@ -54,8 +57,19 @@ The time series data is fetched using the Yahoo Finance library and stored direc
 - Assists in managing risk by providing a dynamic view of market conditions
 - Generates trading signals by comparing the EWMA with the stock's price or other moving averages
 - Measures and models the volatility of a stock, which is crucial for risk management and derivative pricing
+### Features of ARIMA Forecasting
+
+- **AutoRegressive (AR) Component**: Models the relationship between an observation and several lagged observations. Parameter `p` represents the number of lag observations.
+- **Integrated (I) Component**: Deals with differencing to achieve stationarity. Parameter `d` represents the number of times the series is differenced.
+- **Moving Average (MA) Component**: Models the relationship between an observation and a residual error from a moving average model applied to lagged observations. Parameter `q` represents the number of lagged forecast errors.
+- **Stationarity**: ARIMA models require stationary data. Achieve stationarity through differencing or transformations.
+- **AutoARIMA**: Automates parameter selection for ARIMA models.
+- **Model Diagnostics**: Analyze residuals and perform tests like the Ljung-Box test to check model fit.
+- **Forecasting**: Generate forecasts with confidence intervals for future values.
+- **Seasonal ARIMA (SARIMA)**: Extends ARIMA to handle seasonal patterns with additional parameters.
+
 ### Usage
-To run the analysis, open the Jupyter Notebook tsa_eda.ipynb and execute the cells step-by-step.
+To run the analysis, open the Jupyter Notebook tsa_eda.ipynb and execute the cells step-by-step. You can run Forecasting.ipynb and execute all cells.
 
 ### Example Plots
 - Time Series Plot
