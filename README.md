@@ -43,11 +43,24 @@ The time series data is fetched using the Yahoo Finance library and stored direc
 **Rolling Statistics:**
 
 - Calculate and plot rolling mean to observe trends and variability over time.
+
+**Cumulative Moving Average:**
+
+- Calculated and plotted Cumulative Moving Average, helping in observing long-term trend by removing short term fluctuation
+
+**EMA/EWMA:**
+
+- Filters out the noise
+- Assists in managing risk by providing a dynamic view of market conditions
+- Generates trading signals by comparing the EWMA with the stock's price or other moving averages
+- Measures and models the volatility of a stock, which is crucial for risk management and derivative pricing
 ### Usage
 To run the analysis, open the Jupyter Notebook tsa_eda.ipynb and execute the cells step-by-step.
 
 ### Example Plots
 - Time Series Plot
 - Rolling Mean
+- CMA
+- EMA/EWMA
 ### Conclusion
-This EDA provides insights into the time series data, helping to identify trends and patterns. These insights are crucial for further modeling and forecasting tasks. Future additions will include advanced smoothing techniques such as Exponential Smoothing (ETS) and Exponentially Weighted Moving Average (EWMA) to enhance the analysis.
+This EDA provides insights into the time series data, helping to identify trends and patterns. These insights are crucial for further modeling and forecasting tasks. Future additions will include advanced smoothing techniques such as Exponential Smoothing (ETS) and exponential weighted Moving Average (EWMA) to enhance the analysis.
