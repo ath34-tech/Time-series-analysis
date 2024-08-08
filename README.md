@@ -17,10 +17,11 @@ Ensure you have the following packages installed:
 You can install the required packages using pip:
 
 ```bash
-pip install pandas matplotlib plotly yfinance
+pip install pandas matplotlib plotly yfinance statsmodels sklearn
 ```
 ## Project Structure
 **tsa_eda.ipynb:** Jupyter Notebook containing the code for EDA.
+**Forecasting.ipynb:** Jupyter Notebook containing the code for Forecasting.
 ### Data
 The time series data is fetched using the Yahoo Finance library and stored directly in a Pandas DataFrame. The data should contain at least a datetime column and one or more columns with numeric values representing the time series.
 
